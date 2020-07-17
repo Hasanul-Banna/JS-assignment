@@ -8,8 +8,8 @@ function feetToMile(feet) {
         return Mile;
     }
 }
-let result = feetToMile(52800);
-console.log(result);
+let result = feetToMile(84982);
+console.log(result.toFixed(2) + " Mile");
 // feetToMile Conversion End
 
 
@@ -26,7 +26,7 @@ function woodCalculator(C,T,B) {
     return total;
     }
 }
-let result2 = woodCalculator(1,3,2);
+let result2 = woodCalculator(3,4,9);
 console.log("Total quantity of wood is:" + " " + result2+ " " + "cubicFeet");
 // woodCalculator End 
 
