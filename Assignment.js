@@ -33,7 +33,11 @@ console.log("Total quantity of wood is:" + " " + result2+ " " + "cubicFeet");
 
 // brickCalculator Start
 function brickCalculator(n) {
-     if (n>=1 && n<=10) {
+        if (n<0) {
+            return "Negative number of floor is invalid. 0"
+        }
+
+    else if (n>0 && n<=10) {
        let bricks = 1000*15*n ;
         return bricks;
     }
@@ -45,11 +49,11 @@ function brickCalculator(n) {
         let bricks = 1000*10*(n-20) +(1000*15*10) + (1000*12*10) ;
          return bricks;
      }
-     else {
+     else  {
          return 0;
      }
 }
-let result3 = brickCalculator(19) ;
+let result3 = brickCalculator(25) ;
 console.log("Total quantity of brick is:" + " " + result3 + " " + "piece");
 // brickCalculator End
 
