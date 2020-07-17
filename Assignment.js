@@ -8,7 +8,7 @@ function feetToMile(feet) {
         return Mile;
     }
 }
-let result = feetToMile(84982);
+let result = feetToMile(8025);
 console.log(result.toFixed(2) + " Mile");
 // feetToMile Conversion End
 
