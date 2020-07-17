@@ -56,14 +56,22 @@ console.log("Total quantity of brick is:" + " " + result3 + " " + "piece");
 
 // tinyFriend Start
 let Friends = ["Rafid", "Farhanul", "Abir", "Mostafa"];
-function tinyFriend(arry) {
-	return arry.reduce(function(prevName,currName) {
-		if (currName.length < prevName.length) {
-            return currName;
-        		}
-		else 
-			return prevName;
-	})
+function tinyFriend(arry) { 
+
+    if (arry === undefined || arry.length == 0) {
+        return "Empty Array Detected!. please, input some name of your friends "
+    } 
+    else {
+        return arry.reduce(function(prevName,currName) {
+        
+            if (currName.length < prevName.length) {
+               return currName;
+                   } 
+           else 
+               return prevName;
+       })
+    }
+	
 }
 let result4 = tinyFriend(Friends);
 console.log("tiniest name of my friend is: " + result4);
